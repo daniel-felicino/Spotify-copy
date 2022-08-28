@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto ", sans-serif;
+}
+
+.btn-primary {
+  background: #1db954;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  /* específica o comportamento do espaçamento entre caracteres de texto.*/
+  font-weight: bold;
+  /* especifica o peso ou a intensidade da fonte (ex.: negrito). Algumas fontes oferecem apenas as opções normal e negrito.*/
+}
+#navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navbar .navbar-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  height: 40px;
+  width: auto;
+}
+#navbar .navbar-container ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+}
+#navbar .navbar-container ul li {
+  padding: 0 20px;
+}
+#navbar .navbar-container ul li:nth-child(3) {
+  border-right: 1px solid white;
+  /* coloca um traço */
+}
+#showcase {
+  height: 100vh;
+  /* height: 100vh ocupa 100% da visão do usuario na altura*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url("https://www.meupositivo.com.br/doseujeito/wp-content/uploads/2020/01/como-ver-a-letra-de-musica-no-spotify.jpg")
+    center center/cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  /*Os itens flexíveis são exibidos verticalmente, como uma coluna*/
+  align-items: center;
+}
+#showcase .showcase-container h2 {
+  font-size: 5rem;
+}
+
+#showcase .showcase-container p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+#footer {
+  background: black;
+  color: white;
+}
+
+#footer .footer-content {
+  display: flex;
+  justify-content: center;
+}
+#footer .footer-content .logo {
+  padding: 0 30px;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+#footer .footer-content .footer-menu p {
+  color: rgb(82, 81, 81);
+  display: flex;
+  align-items: center;
+}
+#footer .footer-content .footer-menu {
+  padding: 30px;
+  list-style: none;
+}
+
+#footer .footer-content .socials {
+  padding: 30px;
+}
+
+#footer .footer-info {
+  display: flex;
+  margin-bottom: -18px;
+  
+}
+#footer .footer-info .footer-info-item {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+#footer .rigths .country {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: -18px;
+  padding: 0 10px;
+}
